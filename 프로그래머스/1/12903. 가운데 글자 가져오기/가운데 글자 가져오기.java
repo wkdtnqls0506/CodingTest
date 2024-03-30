@@ -6,3 +6,5 @@ class Solution {
         else return String.valueOf(ch[l / 2 - 1]) + String.valueOf(ch[l / 2]);
     }
 }
+
+// substring() 활용해서 푸는 방법 ⭐️
