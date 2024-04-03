@@ -8,3 +8,5 @@ class Solution {
         return answer;
     }
 }
+
+// Integer.parseInt()는 최대 10자리까지 지원하므로, Long 타입으로 선언해주어야 런타임 에러가 발생하지 않음.
