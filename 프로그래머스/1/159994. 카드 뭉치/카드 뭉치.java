@@ -1,6 +1,5 @@
 class Solution {
     public String solution(String[] cards1, String[] cards2, String[] goal) {
-        String answer = "";
         int index1 = 0;
         int index2 = 0;
         for (int i = 0; i < goal.length; i++) {
