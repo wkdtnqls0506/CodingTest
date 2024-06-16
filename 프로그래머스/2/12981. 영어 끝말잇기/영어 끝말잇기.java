@@ -11,6 +11,7 @@ class Solution {
                 answer[1] = (i / n) + 1;
                 break;  
             }
+            
             list.add(words[i]);
             
             if(i > 0 && words[i-1].charAt(words[i-1].length() - 1) != words[i].charAt(0)) {
