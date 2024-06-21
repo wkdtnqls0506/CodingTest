@@ -6,7 +6,7 @@ public class Solution {
 
         for (int i = 0; i < s.length(); i++) {
             Deque<Character> stack = new ArrayDeque<>();
-            String str = s.substring(i, s.length()) + s.substring(0, i);
+            String str = s.substring(i) + s.substring(0, i);
             for (int j = 0; j < str.length(); j++) {
                 char c = str.charAt(j);
                 if (stack.isEmpty()) {
