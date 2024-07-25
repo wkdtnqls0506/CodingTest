@@ -1,3 +1,11 @@
+/*
+    1. 1번, 2번, 3번 수포자의 찍기 패턴 파악
+        - 특정 패턴이 있으면 배열에 미리 저장해두어도 됨
+    2. 각 수포자들의 패턴과 answers 배열 비교
+    3. 점수가 가장 높은 수포자 번호를 배열에 담아서 return
+    -> 시간복잡도: O(N) 
+*/
+
 import java.util.*;
 
 class Solution {
@@ -14,7 +22,7 @@ class Solution {
         }
         
         int max = Math.max(score[0], Math.max(score[1], score[2]));
-        List<Integer> answer = new ArrayList<>();
+        ArrayList<Integer> answer = new ArrayList<>();
         
         for (int i = 0; i < score.length; i++) {
             if (max == score[i]) answer.add(i+1);
