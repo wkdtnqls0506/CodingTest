@@ -2,14 +2,13 @@ import java.util.*;
 
 class Solution {
     public int[] solution(int[] arr, int divisor) {
-        int[] answer = Arrays.stream(arr)
-            .filter(n -> n % divisor == 0) 
-            .sorted() 
-            .toArray(); 
-        
-        if (answer.length == 0) {
-            answer = new int[] {-1};
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] % divisor == 0) {
+                list.add(arr[i]);
+            } 
         }
-        return answer;
+        if(list.size() == 0) return new int[] {-1};
+        return list.stream().sorted().mapToInt(Integer::intValue).toArray();
     }
 }
